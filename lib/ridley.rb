@@ -1,4 +1,3 @@
-require 'chozo'
 require 'active_support/core_ext'
 require 'celluloid'
 require 'faraday'
@@ -9,7 +8,7 @@ require 'active_support/inflector'
 require 'forwardable'
 require 'thread'
 
-if jruby?
+if RUBY_PLATFORM == "java" #if jruby
   require 'json/pure'
 else
   require 'json/ext'
