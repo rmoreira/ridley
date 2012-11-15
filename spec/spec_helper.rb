@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'bundler'
-require 'chozo'
 
 def setup_rspec
   require 'rspec'
